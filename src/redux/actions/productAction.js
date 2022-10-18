@@ -1,7 +1,7 @@
 
 function getProducts(searchQuery) {
     return async (dispatch, getState) => {
-        let url = `http://localhost:3004/products?q=${searchQuery}`;
+        let url = `https://my-json-server.typicode.com/springsYYJ/hnm_demo/products?q=${searchQuery}`;
         let response = await fetch(url)
         let data = await response.json();
         console.log(data);
